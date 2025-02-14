@@ -1,0 +1,298 @@
+ :root {
+ --header-image: url('header.png');
+ --body-bg-image: url("tile.png");
+
+
+ --content: #ddc8c4;
+	--border-size: 4px;
+	--border-colour: #3F334D ;
+	
+	--mint-cream: #3C9A4E;
+	--pale-dogwood: #B0C748;
+	--rose-taupe: #7D8491;
+	--eggplant: #574B60;
+	--text-colour: #574B60;
+	
+ }
+
+li + li {
+  margin-top: 10px;
+}
+
+ #app {
+ position: fixed;
+ top: 50%;
+ left: 0;
+ transform: translateY(-50%);
+ width: 320px;
+ z-index: 1000;
+ }
+
+
+/* 🐞 codyhouse.co */
+.text-divider {
+  --text-divider-gap: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.text-divider::before, .text-divider::after {
+  content: '';
+  height: 1px;
+  background-color: var(--rose-taupe);
+  flex-grow: 1;
+}
+
+.text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
+
+.text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
+
+
+
+main {
+ border: var(--border-size) outset var(--border-colour);
+}
+
+aside {
+	border: var(--border-size) outset var(--border-colour);
+}
+
+main img {
+	border: var(--border-size) outset var(--border-colour);
+}
+
+
+ @font-face {
+ font-family: Nunito;
+ src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+ }
+
+ @font-face {
+ font-family: Nunito;
+ src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+ font-weight: bold;
+ }
+
+ @font-face {
+ font-family: Nunito;
+ src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+ font-style: italic;
+ }
+
+ @font-face {
+ font-family: Nunito;
+ src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+ font-style: italic;
+ font-weight: bold;
+ }
+
+ body {
+ font-family: 'Nunito', sans-serif;
+ margin: 0;
+ background-color: #08031A;
+
+ background-size: 512px;
+ color: var(--text-colour);
+ background-image: var(--body-bg-image);
+ }
+
+ * {
+ -webkit-box-shadow: 0px 0px;
+ box-shadow: 0px 0px;
+ font-size: medium;
+
+
+ }
+
+
+
+
+
+
+
+
+ #container {
+ max-width: 900px;
+
+
+ margin: 0 auto;
+
+ }
+
+
+	#badges {
+	margin-top: 10px;
+	background: var(--content);
+	border: 4px outset var(--border-colour);
+	}
+
+
+
+ #container a {
+ color: var(--mint-cream);
+ font-weight: bold;
+
+ }
+
+ #header {
+ width: 100%;
+
+ height: 150px;
+	
+
+
+ background-image: var(--header-image);
+ background-size: 25%;
+ }
+
+
+ #navbar {
+ height: 40px;
+ background-color: var(--eggplant);
+	
+
+ width: 100%;
+ }
+
+ #navbar ul {
+ display: flex;
+ padding: 0;
+ margin: 0;
+ list-style-type: none;
+ justify-content: space-evenly;
+ }
+
+ #navbar li {
+ padding-top: 10px;
+ }
+
+
+ #navbar li a {
+ color: var(--pale-dogwood);
+
+ font-weight: 800;
+ text-decoration: none;
+
+ }
+
+
+ #navbar li a:hover {
+ color: #a49cba;
+ text-decoration: underline;
+ }
+
+ #flex {
+ display: flex;
+ }
+
+
+ aside {
+ background-color: var(--content);
+ width: 200px;
+ padding: 20px;
+ font-size: smaller;
+
+ }
+
+ main {
+ background-color: var(--content);
+ flex: 1;
+ padding: 20px;
+ order: 2;
+ }
+
+ */ #leftSidebar {
+ order: 1;
+ }
+
+
+ footer {
+ background-color: var(--border-colour);
+
+ width: 100%;
+ height: 40px;
+ padding: 10px;
+ text-align: center;
+	color: #675483;
+
+ }
+
+ h1,
+ h2,
+ h3 {
+ color: var(--eggplant);
+ }
+
+ h1 {
+ font-size: 25px;
+ }
+
+ strong {
+
+ color: var(--eggplant);
+ }
+
+	p {
+	color: var(--text-colour);
+
+	}
+
+
+ .box {
+ background-color: var(--eggplant);
+ border: 4px solid var(--border-colour);
+ padding-top: 10px;
+ padding-right: 10px;
+ padding-left: 10px;
+ padding-bottom: 10px;
+ }
+
+
+
+ #topBar {
+ width: 100%;
+ height: 30px;
+ padding: 10px;
+ font-size: smaller;
+ background-color: var(--content);
+ }
+
+
+
+
+
+
+ @media only screen and (max-width: 800px) {
+ #flex {
+ flex-wrap: wrap;
+ }
+
+ aside {
+ width: 100%;
+ }
+
+
+ main {
+ order: 1;
+ }
+
+ #leftSidebar {
+ order: 2;
+ }
+
+ #rightSidebar {
+ order: 3;
+ }
+
+ #navbar ul {
+ flex-wrap: wrap;
+ }
+ }
