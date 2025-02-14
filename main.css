@@ -15,9 +15,6 @@
 	
  }
 
-li + li {
-  margin-top: 10px;
-}
 
  #app {
  position: fixed;
