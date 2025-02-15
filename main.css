@@ -1,61 +1,80 @@
 .toptitle {
-	color: #3F334D ;
-	background-color: #574B60 ;
-	padding: 8px ;
-	border-top: 4px solid #3F334D ;
-	border-right: 4px solid #3F334D ;
-	border-bottom: 4px solid #3F334D ;
-	border-left: 4px solid #3F334D ;
+	color: #3F334D;
+	background-color: #574B60;
+	padding: 8px;
+	border-top: 4px solid #3F334D;
+	border-right: 4px solid #3F334D;
+	border-bottom: 4px solid #3F334D;
+	border-left: 4px solid #3F334D;
 	margin: 15px;
 }
 
-.toptitle > a {
-		margin-right: 15px;
-		margin-left: 15px;
+.toptitle>a {
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
 .maintext {
-  color: #574B60 ;
-	background-color: #ddc8c4 ;
-	padding: 20px ;
-	border-top: 4px solid #3F334D ;
-	border-right: 4px solid #1c2137 ;
-	border-bottom: 4px solid #1c2137 ;
-	border-left: 4px solid #3F334D ;
+	color: #574B60;
+	background-color: #ddc8c4;
+	padding: 20px;
+	border-top: 4px solid #3F334D;
+	border-right: 4px solid #1c2137;
+	border-bottom: 4px solid #1c2137;
+	border-left: 4px solid #3F334D;
 	margin: 15px;
-  
+
 }
 
-b, strong {
-  color: #3C9A4E;
+b,
+strong {
+	color: #3C9A4E;
 }
 
 #header {
- background-image: url('media/header.gif'); 
+	background-image: url('media/header.gif');
 }
 
- #container {
- max-width: 815px;
+#container {
+	max-width: 815px;
 
 
- margin: 0 auto;
+	margin: 0 auto;
 
- }
- 
- /* link stuff */
- a {
-   color: #3C9A4E;
- }
- 
- 
- #badges {
-    color: #574B60 ;
-	background-color: #ddc8c4 ;
-	padding: 8px ;
-	border-top: 4px solid #3F334D ;
-	border-right: 4px solid #1c2137 ;
-	border-bottom: 4px solid #1c2137 ;
-	border-left: 4px solid #3F334D ;
+}
+
+/* link stuff */
+a {
+	color: #3C9A4E;
+}
+
+
+#badges {
+	color: #574B60;
+	background-color: #ddc8c4;
+	padding: 8px;
+	border-top: 4px solid #3F334D;
+	border-right: 4px solid #1c2137;
+	border-bottom: 4px solid #1c2137;
+	border-left: 4px solid #3F334D;
 	margin: 15px;
- }
-	
+}
+
+
+body {
+	background-image: url("media/tile.gif")
+}
+
+/* https://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag */
+pre {
+	white-space: pre-line;
+	/* Since CSS 2.1 */
+	white-space: -moz-pre-wrap;
+	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;
+	/* Opera 4-6 */
+	white-space: -o-pre-wrap;
+	/* Opera 7 */
+	word-wrap: break-word;
+	/* Internet Explorer 5.5+ */
+}
