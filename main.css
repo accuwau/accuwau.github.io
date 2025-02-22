@@ -1,80 +1,91 @@
+:root {
+    --color-primary-dark: #3F334D;  /* Used for deep accents */
+    --color-primary-light: #574B60;  /* Lighter shade of primary */
+    --color-background-dark: #1c2137;  /* Dark background */
+    --color-background-light: #ddc8c4;  /* Light background */
+    --color-accent-green: #3C9A4E;  /* Accent green for emphasis */
+    --color-muted-beige: #B49A94;  /* Muted beige for subtle text */
+}
+
 .toptitle {
-	color: #3F334D;
-	background-color: #574B60;
-	padding: 8px;
-	border-top: 4px solid #3F334D;
-	border-right: 4px solid #3F334D;
-	border-bottom: 4px solid #3F334D;
-	border-left: 4px solid #3F334D;
-	margin: 15px;
+    color: var(--color-primary-dark);
+    background-color: var(--color-primary-light);
+    padding: 8px;
+    border-top: 4px solid var(--color-primary-dark);
+    border-right: 4px solid var(--color-primary-dark);
+    border-bottom: 4px solid var(--color-primary-dark);
+    border-left: 4px solid var(--color-primary-dark);
+    margin: 15px;
 }
 
 .toptitle>a {
-	margin-right: 15px;
-	margin-left: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .maintext {
-	color: #574B60;
-	background-color: #ddc8c4;
-	padding: 20px;
-	border-top: 4px solid #3F334D;
-	border-right: 4px solid #1c2137;
-	border-bottom: 4px solid #1c2137;
-	border-left: 4px solid #3F334D;
-	margin: 15px;
-
+    color: var(--color-primary-light);
+    background-color: var(--color-background-light);
+    padding: 20px;
+    border-top: 4px solid var(--color-primary-dark);
+    border-right: 4px solid var(--color-background-dark);
+    border-bottom: 4px solid var(--color-background-dark);
+    border-left: 4px solid var(--color-primary-dark);
+    margin: 15px;
 }
 
 b,
 strong {
-	color: #3C9A4E;
+    color: var(--color-accent-green);
 }
 
 #header {
-	background-image: url('media/header.gif');
+    background-image: url('media/header.gif');
 }
 
 #container {
-	max-width: 815px;
+    max-width: 815px;
+    margin: 0 auto;
+}
 
-
-	margin: 0 auto;
-
+.subtle-text {
+    color: var(--color-muted-beige);
 }
 
 /* link stuff */
 a {
-	color: #3C9A4E;
+    color: var(--color-accent-green);
 }
-
 
 #badges {
-	color: #574B60;
-	background-color: #ddc8c4;
-	padding: 8px;
-	border-top: 4px solid #3F334D;
-	border-right: 4px solid #1c2137;
-	border-bottom: 4px solid #1c2137;
-	border-left: 4px solid #3F334D;
-	margin: 15px;
+    color: var(--color-primary-light);
+    background-color: var(--color-background-light);
+    padding: 8px;
+    border-top: 4px solid var(--color-primary-dark);
+    border-right: 4px solid var(--color-background-dark);
+    border-bottom: 4px solid var(--color-background-dark);
+    border-left: 4px solid var(--color-primary-dark);
+    margin: 15px;
 }
 
-
 body {
-	background-image: url("media/tile.gif")
+    background-image: url("media/tile.gif");
 }
 
 /* https://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag */
 pre {
-	white-space: pre-line;
-	/* Since CSS 2.1 */
-	white-space: -moz-pre-wrap;
-	/* Mozilla, since 1999 */
-	white-space: -pre-wrap;
-	/* Opera 4-6 */
-	white-space: -o-pre-wrap;
-	/* Opera 7 */
-	word-wrap: break-word;
-	/* Internet Explorer 5.5+ */
+    white-space: pre-line;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+}
+
+.header-underlined {
+    border-bottom: 1px solid var(--color-primary-light);
 }
