@@ -32,7 +32,7 @@ strong {
 }
 
 #header {
-	background-image: url('media/header.gif');
+	background-image: url('media/headerv2.gif');
 }
 
 #container {
@@ -96,5 +96,12 @@ pre {
 
 
 h1 {
+	text-align: center;
+}
+
+#change-bit-button {
+	border: 4px solid black;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	color: #000000;
 	text-align: center;
 }
