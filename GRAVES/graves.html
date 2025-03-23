@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Graves</title>
+  </head>
+  <body style="background:black;" >
+    <audio autoplay loop>
+      <source src="resources/rain.wav" type="audio/wav">
+    </audio>
+
+    <map name="map">
+      <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+      <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+      <!-- #$-:Please do not edit lines starting with "#$" -->
+      <!-- #$VERSION:2.3 -->
+      <!-- #$AUTHOR:Unknown -->
+      <area shape="poly" coords="69,253,69,365,49,385,30,425,39,446,150,450,196,429,222,397,220,372,196,369,199,252,157,235,114,235,95,245,83,249" href="rsrc" 
+      onmouseover="document.getElementById('main-graves').src='resources/gravesrsrc.gif?a='+Math.random(); let audio = new Audio('resources/slab.wav');
+      audio.volume = 0.25; // Set volume to 50%
+      audio.play();" 
+      onmouseout="document.getElementById('main-graves').src='resources/graves.png';">
+
+      <area shape="poly" coords="259,260,259,372,239,392,220,432,229,453,340,457,386,436,412,404,410,379,386,376,389,259,347,242,304,242,285,252,273,256" href="blog" 
+      onmouseover="document.getElementById('main-graves').src='resources/gravesblog.gif?a='+Math.random(); let audio = new Audio('resources/slab.wav');
+      audio.volume = 0.25; // Set volume to 50%
+      audio.play();" 
+      onmouseout="document.getElementById('main-graves').src='resources/graves.png';">
+
+      <area shape="poly" coords="450,264,450,376,430,396,411,436,420,457,531,461,577,440,603,408,601,383,577,380,580,263,538,246,495,246,476,256,464,260" href="art" 
+      onmouseover="document.getElementById('main-graves').src='resources/gravesart.gif?a='+Math.random(); let audio = new Audio('resources/slab.wav');
+      audio.volume = 0.25; // Set volume to 50%
+      audio.play();" 
+      onmouseout="document.getElementById('main-graves').src='resources/graves.png';">
+      </map>
+
+
+
+      <div class="img-container" id="gif"><img id="main-graves" src="resources/graves.png" alt="Graves" class="center" usemap="#map"><img alt="rain" id="rain" style="pointer-events: none; z-index: 20; width:640px; height:480px; margin: auto; display:block; margin-top:-489px; mix-blend-mode: overlay;" src="resources/rain2.gif"></div>
+    <!-- <button class="allow-play" type="button" onclick="this.remove();">click me to allow audio!!!</button> -->
+  </body>
+
+
+  </html>
+
+<style>
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480;
+    color: #574B60;
+	  background-color: #08070f;
+	  padding: 5px;
+	  border-top: 4px solid #3F334D;
+	  border-right: 4px solid #1c2137;
+	  border-bottom: 4px solid #1c2137;
+	  border-left: 4px solid #3F334D;
+  }
+
+  .allow-play {
+
+    margin-top: 12px; margin-left: auto; margin-right: auto; width:400px; display: block;
+  }
+</style>

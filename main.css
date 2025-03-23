@@ -44,8 +44,6 @@ strong {
 }
 
 
-
-
 .subtle-text {
 	color: #B49A94;
 }
@@ -87,7 +85,9 @@ pre {
 	/* Opera 7 */
 	word-wrap: break-word;
 	/* Internet Explorer 5.5+ */
-}
+} 
+
+
 
 .header-underlined {
 	border-bottom: 1px solid #574B60;
